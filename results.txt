@@ -1,0 +1,50 @@
+Power Quality Analyser Report
+Author: Naser Alkheedy (23042991)
+Total samples: 1000
+
+--- Phase A ---
+  RMS Voltage      : 229.8097 V
+  Peak-to-Peak     : 650.0000 V
+  DC Offset        : -0.00000000 V
+  Standard Deviation: 229.8097 V
+  Clipped Samples  : 20
+  EN 50160 Status  : COMPLIANT (207.0 V – 253.0 V)
+  Status Flags     : 0x01  [bit0(clip)=1 bit1(oot)=0]
+
+--- Phase B ---
+  RMS Voltage      : 229.8097 V
+  Peak-to-Peak     : 649.8574 V
+  DC Offset        : 0.00000000 V
+  Standard Deviation: 229.8097 V
+  Clipped Samples  : 20
+  EN 50160 Status  : COMPLIANT (207.0 V – 253.0 V)
+  Status Flags     : 0x01  [bit0(clip)=1 bit1(oot)=0]
+
+--- Phase C ---
+  RMS Voltage      : 229.8097 V
+  Peak-to-Peak     : 649.8574 V
+  DC Offset        : -0.00000000 V
+  Standard Deviation: 229.8097 V
+  Clipped Samples  : 20
+  EN 50160 Status  : COMPLIANT (207.0 V – 253.0 V)
+  Status Flags     : 0x01  [bit0(clip)=1 bit1(oot)=0]
+
+--- System Metrics ---
+  Total Clipped Samples : 60
+
+  Frequency (Hz)
+    Mean  : 50.0275 Hz  (nominal 50.000 Hz)
+    Min   : 50.0000 Hz
+    Max   : 50.0475 Hz
+
+  Power Factor
+    Mean  : 0.9561  (ideal 1.0)
+    Min   : 0.9500
+    Max   : 0.9617
+
+  Total Harmonic Distortion (%)
+    Mean  : 2.0930 %  (EN 50160 limit: 8%)
+    Min   : 2.0000 %
+    Max   : 2.1839 %
+
+End of report

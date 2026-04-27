@@ -17,16 +17,8 @@ violations), and writes a structured plain-text report to `results.txt`.
 
 ## How to Build and Run
 
-### Option A — CLion (JetBrains, recommended)
 
-1. Open CLion → **File → Open** → select the `power_quality_analyser/` folder.
-2. CLion detects `CMakeLists.txt` automatically. Click **Load CMake Project**.
-3. Select the `power_quality_analyser` run configuration from the dropdown.
-4. Click the **Build** button (hammer icon), then **Run** (play icon).
-5. To pass the CSV file, go to **Run → Edit Configurations** and add the full
-   path to `power_quality_log.csv` in the **Program arguments** field.
-
-### Option B — Command-line with gcc
+### Command-line with gcc
 
 ```bash
 # From inside the power_quality_analyser/ directory:
@@ -36,14 +28,7 @@ gcc -std=c99 -Wall -Wextra main.c waveform.c io.c -lm -o power_quality_analyser
 ./power_quality_analyser power_quality_log.csv
 ```
 
-### Option C — CMake command-line
 
-```bash
-mkdir build && cd build
-cmake ..
-make
-./power_quality_analyser ../power_quality_log.csv
-```
 
 ---
 
@@ -51,13 +36,7 @@ make
 
 The program prints a summary table to the console and writes `results.txt`:
 
-```
-Phase        RMS (V)    Pk-Pk (V)  DC Off (V)  Clipped Status
------        -------    ---------  ----------  ------- ------
-Phase A      229.xxxx   650.xxxx   0.000000          x COMPLIANT
-Phase B      229.xxxx   650.xxxx   0.000000          x COMPLIANT
-Phase C      229.xxxx   650.xxxx   0.000000          x COMPLIANT
-```
+
 
 ---
 
@@ -79,7 +58,7 @@ power_quality_analyser/
 
 ## GitHub Repository
 
-[https://github.com/NaserAlkheedy/power-quality-analyser](https://github.com/NaserAlkheedy/power-quality-analyser)
+[https://github.com/naser2-alkheedy/power-quality-analyser](https://github.com/naser2-alkheedy/power-quality-analyser)
 
 ---
 
